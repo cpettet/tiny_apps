@@ -2,4 +2,22 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 2rem;
 }
