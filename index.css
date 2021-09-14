@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   background-color: black;
   color: white;
+  font-family: "Urbanist", sans-serif;
+}
+
+.app-grave {
+  background-color: blue;
 }
 
 .nav__links {
@@ -33,10 +40,29 @@ main {
   font-size: 4rem;
 }
 
+.app__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main__link {
   padding: 0rem 2rem;
 }
 
-.app-name {
+.main__link__description {
+  font-size: 2rem;
+}
+
+.app__name {
   color: #4cbb17;
+}
+
+.app__name-grave {
+  color: #660000;
+}
+
+.left,
+.right {
+  cursor: pointer;
 }
