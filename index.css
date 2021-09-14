@@ -7,17 +7,36 @@
 }
 
 .nav__links {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem 1rem;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem;
+  list-style: none;
+}
+
+.nav__link__container {
+  font-size: 2rem;
 }
 
 .nav__link {
-    text-decoration: none;
-    font-size: 2rem;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.main__link {
+  padding: 0rem 2rem;
+}
+
+.app-name {
+  color: #4cbb17;
 }

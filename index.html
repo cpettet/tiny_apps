@@ -5,22 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiny Apps</title>
-    <script src="/app.js"></script>
+    <script async src="/app.js"></script>
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
     <nav>
       <ul class="nav__links">
-        <li class="nav__link"><a>app</a></li>
-        <li class="nav__link"><a>blog</a></li>
-        <li class="nav__link"><a>shop</a></li>
-        <li class="nav__link"><a>note</a></li>
-        <li class="nav__link"><a>game</a></li>
+        <li class="nav__link__container">
+          <a href="" class="nav__link" id="app">app</a>
+        </li>
+        <li class="nav__link__container">
+          <a href="" class="nav__link" id="blog">blog</a>
+        </li>
+        <li class="nav__link__container">
+          <a href="" class="nav__link" id="shop">shop</a>
+        </li>
+        <li class="nav__link__container">
+          <a href="" class="nav__link" id="note">note</a>
+        </li>
+        <li class="nav__link__container">
+          <a href="" class="nav__link" id="game">game</a>
+        </li>
       </ul>
     </nav>
 
     <main>
-      <div class="left"></div>
+      <div class="left">&lt;</div>
+      <div class="main__link">
+        tiny <span class="app-name" id="app-name">test</span>
+      </div>
+      <div class="right">&gt;</div>
     </main>
   </body>
 </html>
