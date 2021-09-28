@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap");
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Urbanist", sans-serif;
+}
+
+canvas {
+    border: 5px solid #4cbb17;
+}
