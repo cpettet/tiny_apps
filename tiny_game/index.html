@@ -1,15 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiny Game</title>
     <script async src="game.js"></script>
     <link rel="stylesheet" href="index.css" />
-</head>
-<body>
-    <h1>Tiny Game</h1>
-    <canvas id="game" width="400" height="400"></canvas>
-</body>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav__links">
+        <li class="nav__link__container">
+          <a href="/index.html" class="nav__link" id="app">app</a>
+        </li>
+        <li class="nav__link__container">
+          <a href="" class="nav__link" id="art">art</a>
+        </li>
+        <li class="nav__link__container">
+          <a href="" class="nav__link" id="blog">blog</a>
+        </li>
+        <li class="nav__link__container">
+          <a href="" class="nav__link" id="shop">shop</a>
+        </li>
+        <li class="nav__link__container">
+          <a href="" class="nav__link" id="note">note</a>
+        </li>
+        <li class="nav__link__container">
+          <a href="/tiny_game/index.html" class="nav__link" id="game">game</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Tiny Game</h1>
+      <canvas class="game" width="400" height="400"></canvas>
+    </main>
+    <footer>
+      <div class="footer__container">
+        <p class="footer__text">© Copyright Christian Pettet</p>
+        <div class="footer__spacer"></div>
+        <a class="footer__text" href="https://github.com/cpettet/tiny_apps"
+          >Source</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>

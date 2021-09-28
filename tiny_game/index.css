@@ -1,15 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap");
 
-html, body {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: "Urbanist", sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: "Urbanist", sans-serif;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem;
+  list-style: none;
+}
+
+.nav__link__container {
+  font-size: 2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
 }
 
 canvas {
-    border: 5px solid #4cbb17;
+  border: 5px solid #4cbb17;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; /* Footer height */
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer__spacer {
+  width: 2rem;
 }

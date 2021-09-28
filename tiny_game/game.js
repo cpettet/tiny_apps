@@ -73,7 +73,7 @@ const keyDown = (e) => {
 };
 
 const init = () => {
-  canvas = document.getElementById("game");
+  canvas = document.querySelector(".game");
   context = canvas.getContext("2d");
   document.addEventListener("keydown", keyDown);
   setInterval(game, 1000 / 15);
