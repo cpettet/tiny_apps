@@ -3,6 +3,13 @@ px = py = 10; // position of snake head
 gs = ts = 20;
 ax = ay = 15; // position of apple
 xv = yv = 0; // directional values
+const directionalValues = [
+  { xv: -1, yv: 0 }, // going left
+  { xv: 0, yv: -1 }, // going up
+  { xv: 1, yv: 0 }, // going right
+  { xv: 0, yv: 1 }, // going down
+];
+directionalValueIndex = 0;
 
 body = []; // { x: px, y: py }
 segments = 5;
@@ -46,30 +53,48 @@ const game = () => {
 };
 
 const keyDown = (e) => {
-  switch (e.keyCode) {
-    case 65:
-      // key: A, left
-      xv = -1;
-      yv = 0;
-      break;
-    case 87:
-      // key: W, up
-      xv = 0;
-      yv = -1;
-      console.log(body);
-      console.log(xv, yv);
-      break;
-    case 68:
-      // key: D, right
-      xv = 1;
-      yv = 0;
-      break;
-    case 83:
-      // key: S, down
-      xv = 0;
-      yv = 1;
-      break;
+  if (xv === 0 && yv === 0) {
+    switch (e.keyCode) {
+      case 65:
+        // key: A, left
+        directionalValueIndex = 0;
+        break;
+      case 87:
+        // key: W, up
+        directionalValueIndex = 1;
+        break;
+      case 68:
+        // key: D, right
+        directionalValueIndex = 2;
+        break;
+      case 83:
+        // key: S, down
+        directionalValueIndex = 3;
+        break;
+    }
+  } else {
+    switch (e.keyCode) {
+      case 65:
+        // key: A, left
+        if (directionalValueIndex !== 2) directionalValueIndex = 0;
+        break;
+      case 87:
+        // key: W, up
+        if (directionalValueIndex !== 3) directionalValueIndex = 1;
+        break;
+      case 68:
+        // key: D, right
+        if (directionalValueIndex !== 0) directionalValueIndex = 2;
+        break;
+      case 83:
+        // key: S, down
+        if (directionalValueIndex !== 1) directionalValueIndex = 3;
+        break;
+    }
   }
+
+  xv = directionalValues[directionalValueIndex].xv;
+  yv = directionalValues[directionalValueIndex].yv;
 };
 
 const init = () => {
