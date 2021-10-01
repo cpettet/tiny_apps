@@ -32,6 +32,7 @@ const game = () => {
     context.fillRect(body[i].x * gs, body[i].y * gs, gs - 2, gs - 2);
     if (body[i].x === px && body[i].y === py) {
       segments = 5;
+      xv = yv = 0;
     }
   }
 
