@@ -9,12 +9,14 @@
   font-family: "Urbanist", sans-serif;
 }
 
+html,
 body {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -42,38 +44,14 @@ nav {
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
   height: 88vh;
 }
 
-.app__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main__link {
-  padding: 0rem 2rem;
-}
-
-.main__link__description {
-  font-size: 2rem;
-}
-
-.app__name {
-  color: #4cbb17;
-}
-
-.app__name-grave {
-  color: #660000;
-}
-
-.left,
-.right {
-  cursor: pointer;
+canvas {
+  border: 5px solid #4cbb17;
 }
 
 footer {
@@ -93,33 +71,4 @@ footer {
 
 .footer__spacer {
   width: 2rem;
-}
-
-.new-note-form {
-  display: flex;
-  justify-content: center;
-}
-
-.notes__container {
-  width: 500px;
-  height: 500px;
-  overflow-y: scroll;
-}
-
-.note {
-  border: 1px solid #D3D3D3;
-  background-color: #FFFFFF;
-  color: #000000;
-  font-size: 1rem;
-  margin: 0.5rem;
-  border-radius: 0.25rem;
-  padding: 0.25rem;
-}
-
-.new-note-form__input {}
-
-.new-note-form__submit {
-  border: unset;
-  color: "2ED9EB";
-  padding: 1rem;
 }

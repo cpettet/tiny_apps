@@ -11,8 +11,8 @@ const apps = {
     name: "shop",
     color: "#FDD835",
   },
-  note: {
-    name: "note",
+  notes: {
+    name: "notes",
     color: "#2ED9EB",
   },
   game: {

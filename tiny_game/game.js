@@ -11,7 +11,8 @@ const generateGame = () => {
 
   // initial state for our game
   positionX = positionY = 10; // position of snake head
-  gridSize = tableSize = 20;
+  gridSize = 20;
+  tableSize = 25;
   appleX = appleY = 15; // position of apple
   xVelocity = yVelocity = 0; // directional values
   const directionalValues = [

@@ -8,6 +8,7 @@ const cleanUp = () => {
   document.body.style.backgroundColor = "#000000";
   document.body.style.color = "#FFFFFF"
   display.innerHTML = "";
+  options.innerHTML = "";
 };
 
 const render = appNameSpan => {
@@ -19,6 +20,8 @@ const render = appNameSpan => {
       return generateArt();
     case "grave":
       return generateGrave();
+    case "notes":
+      return generateNotes();
     default:
       return;
   }
