@@ -22,6 +22,8 @@ const render = appNameSpan => {
       return generateGrave();
     case "notes":
       return generateNotes();
+    case "math":
+      return generateMath();
     default:
       return;
   }

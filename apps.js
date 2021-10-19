@@ -3,8 +3,8 @@ const apps = {
     name: "app",
     color: "#4cbb17",
   },
-  blog: {
-    name: "blog",
+  math: {
+    name: "math",
     color: "#E91E63",
   },
   shop: {

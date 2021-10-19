@@ -1,0 +1,30 @@
+.math {
+  height: 500px;
+  width: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.math__display {
+  text-align: right;
+  padding: 1rem;
+  font-size: 2rem;
+  overflow-x: auto;
+  border: 1px solid #eaeaea;
+  border-radius: 0.25rem;
+}
+
+.math__keypad {
+  align-content: center;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.keypad__button {
+  width: 30%;
+  height: 30%;
+  padding: 1rem;
+  border: unset;
+}
