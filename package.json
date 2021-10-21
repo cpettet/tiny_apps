@@ -1,0 +1,22 @@
+{
+  "name": "tiny_apps",
+  "version": "1.0.0",
+  "description": "Some tiny apps to practice vanilla JS. Will be linked to GH homepage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpettet/tiny_apps.git"
+  },
+  "author": "Christian Pettet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cpettet/tiny_apps/issues"
+  },
+  "homepage": "https://github.com/cpettet/tiny_apps#readme",
+  "devDependencies": {
+    "jasmine": "^3.10.0"
+  }
+}
